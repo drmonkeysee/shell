@@ -18,7 +18,7 @@ else
 	SUFFIX='work'
 fi
 
-echo "Creating symlink $SYM_LINK to point to $PROFILE_PREFIX$SUFFIX ..."
+echo 'Creating bash profile symlink...'
 
 ln -sv $PROFILE_PREFIX$SUFFIX $SYM_LINK
 
