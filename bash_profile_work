@@ -1,0 +1,16 @@
+# Path stuff
+export PATH=$PATH:$HOME/Documents/Android/sdk/tools:$HOME/Documents/Android/sdk/platform-tools
+
+# Aliases
+alias twr='open -a /Applications/TextWrangler.app'
+alias gcm='open -a "/Applications/Google Chrome.app"'
+alias svn='xcrun svn'
+
+# Git prompt setup
+source ~/Documents/GitHub/git-source/contrib/completion/git-completion.bash
+source ~/Documents/GitHub/git-source/contrib/completion/git-prompt.sh
+GIT_PS1_SHOWDIRTYSTATE=1
+GIT_PS1_SHOWSTASHSTATE=1
+GIT_PS1_SHOWUNTRACKEDFILES=1
+GIT_PS1_SHOWCOLORHINTS=1
+PROMPT_COMMAND="$PROMPT_COMMAND __git_ps1 '\u@\h:\w' '\$ '"
