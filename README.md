@@ -10,4 +10,5 @@ location so I can pull it down to any machine I need.
 install_profile.sh will create a symlink from ~/.bash\_profile to one of the profile files in this repo.
 You can run it by typing:
 
-	bash install_profile.sh [-h : use _home profile instead of _work]
+	bash install_profile.sh [-h]
+		-h will link to _home profile instead of _work
