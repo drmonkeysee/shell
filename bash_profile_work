@@ -6,6 +6,7 @@ alias twr='open -a /Applications/TextWrangler.app'
 alias gcm='open -a "/Applications/Google Chrome.app"'
 alias svn='xcrun svn'
 alias xcbnosign="xcodebuild CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY=''"
+alias ls='ls -F'
 
 # Git prompt setup
 source ~/Documents/GitHub/git-source/contrib/completion/git-completion.bash
