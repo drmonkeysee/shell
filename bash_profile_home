@@ -2,6 +2,7 @@
 alias twr='open -a /Applications/TextWrangler.app'
 alias gcm='open -a "/Applications/Google Chrome.app"'
 alias svn='xcrun svn'
+alias ls='ls -F'
 
 # Git prompt setup
 source ~/Documents/Dev/Other/git/contrib/completion/git-completion.bash
