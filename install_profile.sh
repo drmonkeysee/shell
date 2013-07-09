@@ -1,12 +1,12 @@
 # Set up a ~/.bash_profile symlink to point to the profile in this repo.
 # This will allow the bash profile to automatically pick up changes.
 # Call this script on the command line as:
-#    bash install_profile.sh [-h]
-# where -h will specify _home profile instead of the default of _work profile
+#    bash install_profile.sh [-o]
+# where -o will specify _home profile instead of the default of _work profile
 
 #!/bin/bash
 
-INPUT_FLAG='-h'
+INPUT_FLAG='-o'
 PROFILE_PREFIX="$PWD/bash_profile_"
 SYM_LINK="$HOME/.bash_profile"
 
