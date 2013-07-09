@@ -10,7 +10,7 @@ INPUT_FLAG='-h'
 PROFILE_PREFIX="$PWD/bash_profile_"
 SYM_LINK="$HOME/.bash_profile"
 
-if [ $1 == $INPUT_FLAG ] ; then
+if [ "$1" == $INPUT_FLAG ] ; then
     echo "$INPUT_FLAG flag set, using home mode."
     SUFFIX='home'
 else
