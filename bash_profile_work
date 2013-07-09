@@ -9,8 +9,8 @@ alias xcbnosign="xcodebuild CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY=''"
 alias ls='ls -F'
 
 # Git prompt setup
-source ~/Documents/GitHub/git-source/contrib/completion/git-completion.bash
-source ~/Documents/GitHub/git-source/contrib/completion/git-prompt.sh
+source ~/Documents/GitHub/git/contrib/completion/git-completion.bash
+source ~/Documents/GitHub/git/contrib/completion/git-prompt.sh
 GIT_PS1_SHOWDIRTYSTATE=1
 GIT_PS1_SHOWSTASHSTATE=1
 GIT_PS1_SHOWUNTRACKEDFILES=1
