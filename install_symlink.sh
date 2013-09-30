@@ -14,19 +14,19 @@ BASH_ENV='-o'
 SYM_LINK="$HOME/."
 
 if [ "$1" == $VIM_MODE ] ; then
-	echo 'Setting vimrc link...'
-	FILE_NAME='vimrc'
-	REPO_FILE=$FILE_NAME
+    echo 'Setting vimrc link...'
+    FILE_NAME='vimrc'
+    REPO_FILE=$FILE_NAME
 else
-	echo 'Setting bash_profile link...'
-	FILE_NAME='bash_profile'
-	if [ "$2" == $BASH_ENV ] ; then
-	    echo "$BASH_ENV flag set, using home mode."
-		REPO_FILE="${FILE_NAME}_home"
-	else
-	    echo "No $BASH_ENV flag set, using work mode."
-		REPO_FILE="${FILE_NAME}_work"
-	fi
+    echo 'Setting bash_profile link...'
+    FILE_NAME='bash_profile'
+    if [ "$2" == $BASH_ENV ] ; then
+        echo "$BASH_ENV flag set, using home mode."
+        REPO_FILE="${FILE_NAME}_home"
+    else
+        echo "No $BASH_ENV flag set, using work mode."
+        REPO_FILE="${FILE_NAME}_work"
+    fi
 fi
 
 echo 'Creating symlink...'
