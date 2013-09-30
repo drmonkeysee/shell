@@ -1,8 +1,10 @@
-# Set up a ~/.bash_profile symlink to point to the profile in this repo.
-# This will allow the bash profile to automatically pick up changes.
+# Set up a file symlink to point to a profile file in this repo.
+# This will allow the symlink to automatically pick up changes.
 # Call this script on the command line as:
-#    bash install_profile.sh [-o]
-# where -o will specify _home profile instead of the default of _work profile
+#    bash install_symlink.sh (-v | -b) [-o]
+# -v specifies vimrc
+# -b specifies bash_profile
+# -o will specify _home profile instead of _work profile for bash_profile
 
 #!/bin/bash
 
