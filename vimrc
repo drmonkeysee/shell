@@ -4,4 +4,4 @@ set softtabstop=4
 set expandtab
 
 " Features
-syntax on
+syntax enable
