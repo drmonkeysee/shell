@@ -4,7 +4,6 @@ export PATH=$PATH:$HOME/Documents/Android/sdk/tools:$HOME/Documents/Android/sdk/
 # Aliases
 alias twr='open -a /Applications/TextWrangler.app'
 alias gcm='open -a "/Applications/Google Chrome.app"'
-alias svn='xcrun svn'
 alias xcbnosign="xcrun xcodebuild CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY="
 alias ls='ls -F'
 
