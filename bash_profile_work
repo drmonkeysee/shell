@@ -1,5 +1,6 @@
-# Path stuff
-export PATH=$PATH:$HOME/Documents/Android/sdk/tools:$HOME/Documents/Android/sdk/platform-tools
+# Path
+PATH=/usr/local/bin:$PATH:$HOME/Documents/Android/sdk/tools:$HOME/Documents/Android/sdk/platform-tools
+export PATH=`echo -n $PATH | awk -v RS=: -v ORS=: '!entries[$0]++' | sed 's/:$//'`
 
 # Aliases
 alias twr='open -a /Applications/TextWrangler.app'
