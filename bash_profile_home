@@ -1,6 +1,6 @@
 # Path
 PATH=/usr/local/bin:$PATH
-export PATH=`echo -n $PATH | awk -v RS=: -v ORS=: '!entries[$0]++' | sed 's/:$//'`
+export PATH=`echo -n $PATH | awk -v RS=: -v ORS=: '!path[$0]++' | sed 's/:$//'`
 
 # Aliases
 alias twr='open -a /Applications/TextWrangler.app'
