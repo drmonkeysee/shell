@@ -6,6 +6,7 @@ alias twr='open -a /Applications/TextWrangler.app'
 alias gcm='open -a "/Applications/Google Chrome.app"'
 alias xcbnosign="xcrun xcodebuild CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY="
 alias ls='ls -F'
+alias subl='/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl'
 
 # Git prompt setup
 source ~/Documents/GitHub/git/contrib/completion/git-completion.bash
