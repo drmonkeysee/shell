@@ -1,8 +1,8 @@
 Bash Profile and Scripts
 =========================
-A collection of bash-related files and scripts I've found useful.
+A collection of bash-related files and scripts.
 
-**install\_symlink.sh** will create a symlink from the home directory to one of the profile files in this repo. You can run it by typing:
+**install\_symlink.sh** will create a symlink from the home directory to one of the profile files in this repo. Install it by running:
 
     bash install_symlink.sh (-v | -b) [-o]
         -v will install vimrc
