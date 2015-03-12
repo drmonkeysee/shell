@@ -8,37 +8,37 @@
 # -b specifies bash_profile
 # -o will specify _home profile instead of _work profile for bash_profile
 
-VIM_MODE='-v'
-BASH_MODE='-b'
-BASH_ENV='-o'
-SYM_LINK="$HOME/."
+vim_mode='-v'
+bash_mode='-b'
+bash_env='-o'
+sym_link="$HOME/."
 
-if [ "$1" == $VIM_MODE ] ; then
+if [ "$1" == $vim_mode ] ; then
     echo 'Setting vimrc link...'
-    FILE_NAME='vimrc'
-    REPO_FILE=$FILE_NAME
+    file_name='vimrc'
+    repo_file=$file_name
 else
     echo 'Setting bash_profile link...'
-    FILE_NAME='bash_profile'
-    if [ "$2" == $BASH_ENV ] ; then
-        echo "$BASH_ENV flag set, using home mode."
-        REPO_FILE="${FILE_NAME}_home"
+    file_name='bash_profile'
+    if [ "$2" == $bash_env ] ; then
+        echo "$bash_env flag set, using home mode."
+        repo_file="${file_name}_home"
     else
-        echo "No $BASH_ENV flag set, using work mode."
-        REPO_FILE="${FILE_NAME}_work"
+        echo "No $bash_env flag set, using work mode."
+        repo_file="${file_name}_work"
     fi
 fi
 
 echo 'Creating symlink...'
 
-ln -sv $PWD/$REPO_FILE $SYM_LINK$FILE_NAME
+ln -sv $PWD/$repo_file $sym_link$file_name
 
-RETURN_VAL=$?
+return_val=$?
 
-if [ $RETURN_VAL -ne 0 ] ; then
+if [ $return_val -ne 0 ] ; then
     echo 'Error: no symlink created.'
 else
     echo 'Symlink created.'
 fi
 
-exit $RETURN_VAL
+exit $return_val
