@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Set up a file symlink to point to a profile file in this repo.
 # This will allow the symlink to automatically pick up changes.
 # Call this script on the command line as:
@@ -5,8 +7,6 @@
 # -v specifies vimrc
 # -b specifies bash_profile
 # -o will specify _home profile instead of _work profile for bash_profile
-
-#!/bin/bash
 
 VIM_MODE='-v'
 BASH_MODE='-b'
