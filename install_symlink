@@ -3,14 +3,14 @@
 # Set up a file symlink to point to a profile file in this repo.
 # This will allow the symlink to automatically pick up changes.
 # Call this script on the command line as:
-#    bash install_symlink.sh (-v | -b) [-o]
+#    bash install_symlink.sh (-v | -b) [o]
 # -v specifies vimrc
 # -b specifies bash_profile
-# -o will specify _home profile instead of _work profile for bash_profile
+# o will specify _home profile instead of _work profile for bash_profile
 
 vim_mode='-v'
 bash_mode='-b'
-bash_env='-o'
+bash_env='o'
 sym_link="${HOME}/."
 
 if [ "$1" == $vim_mode ] ; then
@@ -21,10 +21,10 @@ else
     echo 'Setting bash_profile link...'
     file_name='bash_profile'
     if [ "$2" == $bash_env ] ; then
-        echo "$bash_env flag set, using home mode."
+        echo "'$bash_env' flag set, using home mode."
         repo_file="${file_name}_home"
     else
-        echo "No $bash_env flag set, using work mode."
+        echo "No '$bash_env' flag set, using work mode."
         repo_file="${file_name}_work"
     fi
 fi
