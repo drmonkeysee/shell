@@ -6,7 +6,7 @@ export PERL_MB_OPT="--install_base \"${HOME}/Documents/Dev/perl5\""
 export PERL_MM_OPT="INSTALL_BASE=${HOME}/Documents/Dev/perl5"
 
 # golang
-export GOPATH=~/Documents/Dev/go
+export GOPATH="${HOME}/Documents/Dev/go"
 
 # Aliases
 alias twr='open -a /Applications/TextWrangler.app'

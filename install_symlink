@@ -11,7 +11,7 @@
 vim_mode='-v'
 bash_mode='-b'
 bash_env='-o'
-sym_link="$HOME/."
+sym_link="${HOME}/."
 
 if [ "$1" == $vim_mode ] ; then
     echo 'Setting vimrc link...'
@@ -31,7 +31,7 @@ fi
 
 echo 'Creating symlink...'
 
-ln -sv $PWD/$repo_file $sym_link$file_name
+ln -sv "${PWD}/${repo_file}" "${sym_link}${file_name}"
 
 return_val=$?
 
