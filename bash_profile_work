@@ -1,5 +1,5 @@
 # Path
-PATH=$PATH:$HOME/Documents/Android/sdk/tools:$HOME/Documents/Android/sdk/platform-tools
+PATH="${PATH}:${HOME}/Documents/Android/sdk/tools:${HOME}/Documents/Android/sdk/platform-tools"
 
 # Aliases
 alias twr='open -a /Applications/TextWrangler.app'
