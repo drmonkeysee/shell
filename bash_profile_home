@@ -1,3 +1,13 @@
+# Python 3
+export PATH="/Library/Frameworks/Python.framework/Versions/3.4/bin:${PATH}"
+
+# CPAN and Perl
+export PERL_MB_OPT="--install_base \"$HOME/Documents/Dev/perl5\""
+export PERL_MM_OPT="INSTALL_BASE=$HOME/Documents/Dev/perl5"
+
+# golang
+export GOPATH=~/Documents/Dev/go
+
 # Aliases
 alias twr='open -a /Applications/TextWrangler.app'
 alias gcm='open -a /Applications/Google\ Chrome.app'
@@ -5,7 +15,7 @@ alias subl='/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl'
 alias ls='ls -F'
 alias py='python3'
 
-# Git prompt setup
+# git prompt setup
 source ~/Documents/Dev/Other/git/contrib/completion/git-completion.bash
 source ~/Documents/Dev/Other/git/contrib/completion/git-prompt.sh
 GIT_PS1_SHOWDIRTYSTATE=1
@@ -13,18 +23,3 @@ GIT_PS1_SHOWSTASHSTATE=1
 GIT_PS1_SHOWUNTRACKEDFILES=1
 GIT_PS1_SHOWCOLORHINTS=1
 PROMPT_COMMAND="$PROMPT_COMMAND __git_ps1 '🐵 :\W' '∫ '"
-
-###
-# Programming Environment
-###
-
-# golang
-export GOPATH=~/Documents/Dev/go
-
-# Setting PATH for Python 3.4
-# The orginal version is saved in .bash_profile.pysave
-export PATH="/Library/Frameworks/Python.framework/Versions/3.4/bin:${PATH}"
-
-# CPAN and Perl
-export PERL_MB_OPT="--install_base \"$HOME/Documents/Dev/perl5\""
-export PERL_MM_OPT="INSTALL_BASE=$HOME/Documents/Dev/perl5"
