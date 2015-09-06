@@ -1,11 +1,8 @@
-" Options
-set shiftwidth=4
-set softtabstop=4
-set expandtab
-
 " Features
 syntax enable
 
 " Filetypes
-autocmd Filetype make setlocal shiftwidth& softtabstop& noexpandtab
 autocmd BufNewFile,BufRead *.md set filetype=markdown
+autocmd Filetype python setlocal expandtab softtabstop=4 shiftwidth=4
+autocmd Filetype javascript setlocal expandtab softtabstop=2 shiftwidth=2
+autocmd Filetype json setlocal expandtab softtabstop=2 shiftwidth=2
