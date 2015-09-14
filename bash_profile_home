@@ -1,5 +1,5 @@
 # Python 3
-export PATH="/Library/Frameworks/Python.framework/Versions/3.4/bin:${PATH}"
+export PATH="/Library/Frameworks/Python.framework/Versions/3.5/bin:${PATH}"
 
 # CPAN and Perl
 export PERL_MB_OPT="--install_base \"${HOME}/Documents/Dev/perl5\""
