@@ -1,0 +1,23 @@
+#!/bin/sh
+
+if [ "$1" == '-o' ] ; then
+	echo 'Using home profile...'
+	sh_profile=bash_profile_home
+else
+	echo 'Using work profile...'
+	sh_profile=bash_profile_work
+fi
+
+echo 'Creating bash profile link...'
+ln -sv $sh_profile "${HOME}/.bash_profile"
+exit_code=$?
+
+echo 'Creating vimrc link...'
+ln -sv vimrc "${HOME}/.vimrc"
+if [ $exit_code -eq 0 ] ; then exit_code=$? ; fi
+
+echo 'Copying Sublime Text preferences...'
+cp -v SublimeText/*.sublime-settings "${HOME}/Library/Application Support/Sublime Text 2/Packages/User/"
+if [ $exit_code -eq 0 ] ; then exit_code=$? ; fi
+
+exit $exit_code
