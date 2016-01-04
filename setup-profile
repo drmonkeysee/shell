@@ -9,11 +9,11 @@ else
 fi
 
 echo 'Creating bash profile link...'
-ln -sv $sh_profile "${HOME}/.bash_profile"
+ln -sv "${PWD}/${sh_profile}" "${HOME}/.bash_profile"
 exit_code=$?
 
 echo 'Creating vimrc link...'
-ln -sv vimrc "${HOME}/.vimrc"
+ln -sv "${PWD}/vimrc" "${HOME}/.vimrc"
 if [ $exit_code -eq 0 ] ; then exit_code=$? ; fi
 
 echo 'Copying Sublime Text preferences...'
