@@ -17,7 +17,7 @@ ln -sv "${PWD}/vimrc" "${HOME}/.vimrc"
 if [ $exit_code -eq 0 ] ; then exit_code=$? ; fi
 
 echo 'Copying Sublime Text preferences...'
-cp -v SublimeText/*.sublime-settings "${HOME}/Library/Application Support/Sublime Text 2/Packages/User/"
+cp -v SublimeText/*.sublime-settings "${HOME}/Library/Application Support/Sublime Text 3/Packages/User/"
 if [ $exit_code -eq 0 ] ; then exit_code=$? ; fi
 
 exit $exit_code
