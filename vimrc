@@ -11,3 +11,4 @@ autocmd Filetype html setlocal expandtab softtabstop=2 shiftwidth=2
 autocmd Filetype htmldjango setlocal expandtab softtabstop=2 shiftwidth=2
 autocmd Filetype css setlocal expandtab softtabstop=2 shiftwidth=2
 autocmd Filetype xml setlocal expandtab softtabstop=2 shiftwidth=2
+autocmd Filetype yaml setlocal expandtab softtabstop=2 shiftwidth=2
