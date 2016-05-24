@@ -9,8 +9,8 @@ alias ls='ls -F'
 alias py='python3'
 
 # Git prompt setup
-source ~/Documents/GitHub/git/contrib/completion/git-completion.bash
-source ~/Documents/GitHub/git/contrib/completion/git-prompt.sh
+source "${HOME}/Documents/GitHub/git/contrib/completion/git-completion.bash"
+source "${HOME}/Documents/GitHub/git/contrib/completion/git-prompt.sh"
 GIT_PS1_SHOWDIRTYSTATE=1
 GIT_PS1_SHOWSTASHSTATE=1
 GIT_PS1_SHOWUNTRACKEDFILES=1
