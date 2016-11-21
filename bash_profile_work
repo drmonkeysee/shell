@@ -1,5 +1,5 @@
 # Path
-export PATH="/Library/Frameworks/Python.framework/Versions/3.5/bin:${PATH}"
+export PATH="/Library/Frameworks/Python.framework/Versions/3.5/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
 
 # Aliases
 alias twr='open -a /Applications/TextWrangler.app'
@@ -7,6 +7,7 @@ alias gcm='open -a /Applications/Google\ Chrome.app'
 alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
 alias ls='ls -F'
 alias py='python3'
+alias p2='python'
 
 # Git prompt setup
 source "${HOME}/Documents/GitHub/git/contrib/completion/git-completion.bash"
