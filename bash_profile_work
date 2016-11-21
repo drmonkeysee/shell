@@ -7,7 +7,7 @@ alias gcm='open -a /Applications/Google\ Chrome.app'
 alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
 alias ls='ls -F'
 alias py='python3'
-alias p2='python'
+alias py2='python'
 
 # Git prompt setup
 source "${HOME}/Documents/GitHub/git/contrib/completion/git-completion.bash"
