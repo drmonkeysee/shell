@@ -16,8 +16,10 @@ echo 'Creating vimrc link...'
 ln -sv "${PWD}/vimrc" "${HOME}/.vimrc"
 if [ $exit_code -eq 0 ] ; then exit_code=$? ; fi
 
-echo 'Copying Sublime Text preferences...'
-cp -v SublimeText/*.sublime-settings "${HOME}/Library/Application Support/Sublime Text 3/Packages/User/"
-if [ $exit_code -eq 0 ] ; then exit_code=$? ; fi
+echo 'Creating Sublime Text preference links...'
+for sublsetting in SublimeText/*.sublime-settings ; do
+	ln -sv "${PWD}/$sublsetting" "${HOME}/Library/Application Support/Sublime Text 3/Packages/User"
+	if [ $exit_code -eq 0 ] ; then exit_code=$? ; fi
+done
 
 exit $exit_code
