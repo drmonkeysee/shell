@@ -1,5 +1,5 @@
 # Path
-export PATH="/Library/Frameworks/Python.framework/Versions/3.5/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
+export PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
 
 # Aliases
 alias twr='open -a /Applications/TextWrangler.app'
