@@ -9,6 +9,7 @@ alias ls='ls -F'
 alias py='python3'
 alias py2='python'
 alias omv="source ${HOME}/Documents/omvenv/bin/activate"
+alias py3v="source ${HOME}/Documents/p3venv/bin/activate"
 
 # Git prompt setup
 source "${HOME}/Documents/GitHub/git/contrib/completion/git-completion.bash"
