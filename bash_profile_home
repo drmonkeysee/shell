@@ -5,7 +5,7 @@ export PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
 export GOPATH="${HOME}/Documents/Dev/go"
 
 # Aliases
-alias twr='open -a /Applications/TextWrangler.app'
+alias bb='open -a /Applications/BBEdit.app'
 alias gcm='open -a /Applications/Google\ Chrome.app'
 alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
 alias ls='ls -F'
