@@ -3,7 +3,10 @@ import sys
 import json
 
 text = sys.stdin.read()
-stripped_lines = ''.join(text.splitlines())
-parsed_json = json.loads(stripped_lines)
-json.dump(parsed_json, sys.stdout, indent=2)
-print()
+try:
+    parsed_json = json.loads(text)
+    json.dump(parsed_json, sys.stdout, indent=2)
+    print()
+except Exception:
+    print(text, end='')
+    raise
