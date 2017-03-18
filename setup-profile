@@ -22,4 +22,10 @@ for sublsetting in SublimeText/*.sublime-settings ; do
 	if [ $exit_code -eq 0 ] ; then exit_code=$? ; fi
 done
 
+echo 'Creating BBEdit text filter links...'
+for textfilter in BBEdit/*.py ; do
+	ln -sv "${PWD}/$textfilter" "${HOME}/Library/Application Support/BBEdit/Text Filters"
+	if [ $exit_code -eq 0 ] ; then exit_code=$? ; fi
+done
+
 exit $exit_code
