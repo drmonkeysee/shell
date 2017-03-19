@@ -8,6 +8,7 @@ alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
 alias ls='ls -F'
 alias py='python3'
 alias py2='python'
+alias pv='source venv/bin/activate'
 alias omv="source ${HOME}/Documents/omvenv/bin/activate"
 alias om3v="source ${HOME}/Documents/om3venv/bin/activate"
 alias py3v="source ${HOME}/Documents/py3venv/bin/activate"

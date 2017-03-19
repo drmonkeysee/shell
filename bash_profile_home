@@ -10,6 +10,7 @@ alias gcm='open -a /Applications/Google\ Chrome.app'
 alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
 alias ls='ls -F'
 alias py='python3'
+alias pv='source venv/bin/activate'
 
 # git prompt setup
 source "${HOME}/Documents/Dev/Other/git/contrib/completion/git-completion.bash"
