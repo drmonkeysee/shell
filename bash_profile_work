@@ -6,12 +6,12 @@ alias bbe='open -a /Applications/BBEdit.app'
 alias gcm='open -a /Applications/Google\ Chrome.app'
 alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
 alias ls='ls -F'
-alias py='python3'
+alias py3='python3'
 alias py2='python'
-alias pv='source venv/bin/activate'
+alias pyv='source venv/bin/activate'
 alias omv="source ${HOME}/Documents/omvenv/bin/activate"
 alias om3v="source ${HOME}/Documents/om3venv/bin/activate"
-alias py3v="source ${HOME}/Documents/py3venv/bin/activate"
+alias dv3v="source ${HOME}/Documents/py3venv/bin/activate"
 
 # Git prompt setup
 source "${HOME}/Documents/GitHub/git/contrib/completion/git-completion.bash"
