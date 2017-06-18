@@ -1,9 +1,6 @@
 # Python 3
 export PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
 
-# golang
-export GOPATH="${HOME}/Documents/Dev/go"
-
 # Aliases
 alias bbe='open -a /Applications/BBEdit.app'
 alias gcm='open -a /Applications/Google\ Chrome.app'
