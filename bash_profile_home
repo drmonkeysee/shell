@@ -1,6 +1,3 @@
-# Python 3
-export PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
-
 # Aliases
 alias bbe='open -a /Applications/BBEdit.app'
 alias gcm='open -a /Applications/Google\ Chrome.app'

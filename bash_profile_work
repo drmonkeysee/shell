@@ -1,6 +1,3 @@
-# Path
-export PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
-
 # Aliases
 alias bbe='open -a /Applications/BBEdit.app'
 alias gcm='open -a /Applications/Google\ Chrome.app'
@@ -11,7 +8,7 @@ alias py2='python'
 alias pyv='source venv/bin/activate'
 alias omv="source ${HOME}/Documents/omvenv/bin/activate"
 alias om3v="source ${HOME}/Documents/om3venv/bin/activate"
-alias dv3v="source ${HOME}/Documents/py3venv/bin/activate"
+alias py3v="source ${HOME}/Documents/py3venv/bin/activate"
 
 # Git prompt setup
 source "${HOME}/Documents/GitHub/git/contrib/completion/git-completion.bash"
