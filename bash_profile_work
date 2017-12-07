@@ -7,6 +7,9 @@ alias pyv='source venv/bin/activate'
 alias omv="source ${HOME}/Documents/omvenv/bin/activate"
 alias om3v="source ${HOME}/Documents/om3venv/bin/activate"
 alias py3v="source ${HOME}/Documents/py3venv/bin/activate"
+if [ -f "${HOME}/.bash_aliases" ] ; then
+	source "${HOME}/.bash_aliases"
+fi
 
 # Git prompt setup
 source "${HOME}/Documents/GitHub/git/contrib/completion/git-completion.bash"
