@@ -1,3 +1,6 @@
+# Environment
+SPARK_HOME=/usr/local/Cellar/apache-spark/2.2.0/libexec
+
 # Aliases
 alias bbe='open -a /Applications/BBEdit.app'
 alias gcm='open -a /Applications/Google\ Chrome.app'
