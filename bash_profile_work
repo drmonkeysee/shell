@@ -1,5 +1,5 @@
 # Environment
-export SPARK_HOME=/usr/local/Cellar/apache-spark/2.2.0/libexec
+export SPARK_HOME=/usr/local/Cellar/apache-spark/2.2.1/libexec
 
 # Aliases
 alias bbe='open -a /Applications/BBEdit.app'
