@@ -5,6 +5,7 @@
 		".git",
 		".hg",
 		"CVS",
-		"venv"
+		"venv",
+		"node_modules"
 	]
 }
