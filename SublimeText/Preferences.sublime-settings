@@ -4,6 +4,7 @@
 		".svn",
 		".git",
 		".hg",
+		".cache",
 		"CVS",
 		"venv",
 		"node_modules"
