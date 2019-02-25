@@ -18,7 +18,10 @@ if [ $exit_code -eq 0 ] ; then exit_code=$? ; fi
 
 echo 'Creating Sublime Text preference links...'
 subldir="${HOME}/Library/Application Support/Sublime Text 3/Packages/User"
+
 ln -sv "${PWD}/SublimeText/Preferences.sublime-settings" "${subldir}/Preferences.sublime-settings"
+if [ $exit_code -eq 0 ] ; then exit_code=$? ; fi
+ln -sv "${PWD}/SublimeText/Anaconda.sublime-settings" "${subldir}/Anaconda.sublime-settings"
 if [ $exit_code -eq 0 ] ; then exit_code=$? ; fi
 
 spacelangs=( 'C' 'C++' 'Objective-C' 'Python' )
@@ -31,8 +34,8 @@ for weblang in ${weblangs[@]} ; do
 	ln -sv "${PWD}/SublimeText/Web.sublime-settings" "${subldir}/${weblang}.sublime-settings"
 	if [ $exit_code -eq 0 ] ; then exit_code=$? ; fi
 done
-
 ln -sv "${PWD}/SublimeText/HTML.sublime-settings" "${subldir}/HTML.sublime-settings"
+if [ $exit_code -eq 0 ] ; then exit_code=$? ; fi
 
 echo 'Creating BBEdit text filter links...'
 for textfilter in BBEdit/*.py ; do
