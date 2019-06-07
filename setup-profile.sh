@@ -1,16 +1,29 @@
 #!/bin/sh
 
+zsh_theme=drmonkeysee
+zshrc="${HOME}/.zshrc"
+
 if [ "$1" == '-o' ] ; then
 	echo 'Using home profile...'
-	sh_profile=bash_profile_home
+	zsh_theme_src=${zsh_theme}-home.zsh-theme
+	zsh_settings="${PWD}/zsh-home.sh"
 else
 	echo 'Using work profile...'
-	sh_profile=bash_profile_work
+	zsh_theme_src="${zsh_theme}-work.zsh-theme"
+	zsh_settings="${PWD}/zsh-work.sh"
 fi
 
-echo 'Creating bash profile link...'
-ln -sv "${PWD}/${sh_profile}" "${HOME}/.bash_profile"
+echo 'Creating zsh theme link...'
+ln -sv "${PWD}/${zsh_theme_src}" "${HOME}/.oh-my-zsh/themes/${zsh_theme}.zsh-theme"
 exit_code=$?
+
+echo 'Updating zshrc...'
+sed -i -e 's/ZSH_THEME="robbyrussell"/ZSH_THEME="drmonkeysee"/ ; s/^plugins=(.*$/plugins=(git git-prompt)/' "$zshrc"
+echo "
+# Profile settings
+source $zsh_settings
+" >> "$zshrc"
+if [ $exit_code -eq 0 ] ; then exit_code=$? ; fi
 
 echo 'Creating vimrc link...'
 ln -sv "${PWD}/vimrc" "${HOME}/.vimrc"

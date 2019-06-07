@@ -5,7 +5,6 @@ export SPARK_HOME=/usr/local/Cellar/apache-spark/2.3.2/libexec
 alias bbe='open -a /Applications/BBEdit.app'
 alias gcm='open -a /Applications/Google\ Chrome.app'
 alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
-alias ls='ls -F'
 alias pyv='source venv/bin/activate'
 alias omv="source ${HOME}/Documents/omvenv/bin/activate"
 alias om3v="source ${HOME}/Documents/om3venv/bin/activate"
@@ -13,12 +12,3 @@ alias py3v="source ${HOME}/Documents/py3venv/bin/activate"
 if [ -f "${HOME}/.shell_aliases" ] ; then
 	source "${HOME}/.shell_aliases"
 fi
-
-# Git prompt setup
-source "${HOME}/Documents/GitHub/git/contrib/completion/git-completion.bash"
-source "${HOME}/Documents/GitHub/git/contrib/completion/git-prompt.sh"
-GIT_PS1_SHOWDIRTYSTATE=1
-GIT_PS1_SHOWSTASHSTATE=1
-GIT_PS1_SHOWUNTRACKEDFILES=1
-GIT_PS1_SHOWCOLORHINTS=1
-PROMPT_COMMAND="$PROMPT_COMMAND ; __git_ps1 '\u@\h:\W' '∫ '"
