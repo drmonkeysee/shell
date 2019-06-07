@@ -1,2 +1,5 @@
 local ret_status="%(?:%{$fg_bold[cyan]%}:%{$fg_bold[red]%})"
-PROMPT='🐵:${ret_status}%c%{$reset_color%}∫ '
+PROMPT='$(virtualenv_prompt_info)🐵:${ret_status}%c%{$reset_color%}∫ '
+
+ZSH_THEME_VIRTUALENV_PREFIX="(%{$fg_bold[green]%}"
+ZSH_THEME_VIRTUALENV_SUFFIX="%{$reset_color%})"

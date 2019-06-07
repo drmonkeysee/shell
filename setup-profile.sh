@@ -18,7 +18,7 @@ ln -sv "${PWD}/${zsh_theme_src}" "${HOME}/.oh-my-zsh/themes/${zsh_theme}.zsh-the
 exit_code=$?
 
 echo 'Updating zshrc...'
-sed -i .bak -e 's/ZSH_THEME="robbyrussell"/ZSH_THEME="drmonkeysee"/ ; s/^plugins=(.*$/plugins=(git git-prompt)/' "$zshrc"
+sed -i .bak -e 's/ZSH_THEME="robbyrussell"/ZSH_THEME="drmonkeysee"/ ; s/^plugins=(.*$/plugins=(git git-prompt virtualenv)/' "$zshrc"
 echo "
 # Profile settings
 source $zsh_settings
