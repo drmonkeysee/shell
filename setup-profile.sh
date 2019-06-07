@@ -17,13 +17,16 @@ echo 'Creating zsh theme link...'
 ln -sv "${PWD}/${zsh_theme_src}" "${HOME}/.oh-my-zsh/themes/${zsh_theme}.zsh-theme"
 exit_code=$?
 
-echo 'Updating zshrc...'
-sed -i .bak -e 's/ZSH_THEME="robbyrussell"/ZSH_THEME="drmonkeysee"/ ; s/^plugins=(.*$/plugins=(git git-prompt virtualenv)/' "$zshrc"
-echo "
-# Profile settings
-source $zsh_settings
-" >> "$zshrc"
-if [ $exit_code -eq 0 ] ; then exit_code=$? ; fi
+grep -q drmonkeysee "$zshrc"
+if [ "$?" -ne 0 ] ; then
+	echo 'Updating zshrc...'
+	sed -i .bak -e 's/ZSH_THEME="robbyrussell"/ZSH_THEME="drmonkeysee"/ ; s/^plugins=(.*$/plugins=(git git-prompt virtualenv)/' "$zshrc"
+	echo "
+	# Profile settings
+	source $zsh_settings
+	" >> "$zshrc"
+	if [ $exit_code -eq 0 ] ; then exit_code=$? ; fi
+fi
 
 echo 'Creating vimrc link...'
 ln -sv "${PWD}/vimrc" "${HOME}/.vimrc"

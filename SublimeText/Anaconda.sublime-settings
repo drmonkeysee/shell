@@ -1,4 +1,4 @@
 {
   "python_interpreter": "/usr/local/bin/python3",
-  "pep8_max_line_length": 149
+  "pep8_max_line_length": 119
 }
