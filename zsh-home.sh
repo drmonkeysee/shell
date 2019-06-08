@@ -1,4 +1,4 @@
-# Env
+# Environment
 unset LESS
 
 # Aliases

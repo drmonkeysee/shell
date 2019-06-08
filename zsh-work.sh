@@ -1,4 +1,5 @@
 # Environment
+unset LESS
 export SPARK_HOME=/usr/local/Cellar/apache-spark/2.3.2/libexec
 
 # Aliases
