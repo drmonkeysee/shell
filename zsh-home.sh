@@ -1,3 +1,6 @@
+# Env
+unset LESS
+
 # Aliases
 alias ls='ls -GF'
 alias bbe='open -a /Applications/BBEdit.app'
