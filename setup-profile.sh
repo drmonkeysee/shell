@@ -9,7 +9,7 @@ if [ "$1" == '-o' ] ; then
 	zsh_settings="${PWD}/zsh-home.sh"
 else
 	echo 'Using work profile...'
-	zsh_theme_src="${zsh_theme}-work.zsh-theme"
+	zsh_theme_src=${zsh_theme}-work.zsh-theme
 	zsh_settings="${PWD}/zsh-work.sh"
 fi
 
