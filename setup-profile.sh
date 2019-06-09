@@ -18,7 +18,7 @@ ln -sv "${PWD}/${zsh_theme_src}" "${HOME}/.oh-my-zsh/themes/${zsh_theme}.zsh-the
 exit_code=$?
 
 grep -q drmonkeysee "$zshrc"
-if [ "$?" -ne 0 ] ; then
+if [ $? -ne 0 ] ; then
 	echo 'Updating zshrc...'
 	sed -i .bak -e 's/ZSH_THEME="robbyrussell"/ZSH_THEME="drmonkeysee"/ ; s/^plugins=(.*$/plugins=(git git-prompt virtualenv)/' "$zshrc"
 	echo "
