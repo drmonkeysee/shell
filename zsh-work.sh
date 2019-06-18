@@ -1,7 +1,7 @@
 # Environment
 unset LESS
 export PATH="/usr/local/sbin:$PATH"
-export PYTHONSTARTUP="${PWD}/py36shim.py"
+export PYTHONSTARTUP="$(dirname $0)/py36shim.py"
 export SPARK_HOME=/usr/local/Cellar/apache-spark/2.3.2/libexec
 
 # Aliases
