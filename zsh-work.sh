@@ -5,6 +5,7 @@ export PYTHONSTARTUP="$(dirname $0)/py36shim.py"
 export SPARK_HOME=/usr/local/Cellar/apache-spark/2.3.2/libexec
 
 # Aliases
+alias ls='ls -GF'
 alias bbe='open -a /Applications/BBEdit.app'
 alias gcm='open -a /Applications/Google\ Chrome.app'
 alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
