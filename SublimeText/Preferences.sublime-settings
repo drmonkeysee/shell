@@ -1,14 +1,14 @@
 {
-	"folder_exclude_patterns":
-	[
-		".svn",
-		".git",
-		".hg",
-		".cache",
-		"CVS",
-		"venv",
-		"node_modules"
-	],
-	"rulers": [80],
-	"trim_trailing_white_space_on_save": true
+  "folder_exclude_patterns":
+  [
+    ".svn",
+    ".git",
+    ".hg",
+    ".cache",
+    "CVS",
+    "venv",
+    "node_modules"
+  ],
+  "rulers": [80],
+  "trim_trailing_white_space_on_save": true
 }
