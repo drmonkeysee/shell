@@ -4,6 +4,11 @@ export PATH="/usr/local/sbin:$PATH"
 export PYTHONSTARTUP="$(dirname $0)/py36shim.py"
 export SPARK_HOME=/usr/local/Cellar/apache-spark/2.3.2/libexec
 
+# nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
 # Aliases
 alias ls='ls -GF'
 alias bbe='open -a /Applications/BBEdit.app'
