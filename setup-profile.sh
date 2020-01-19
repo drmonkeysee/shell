@@ -22,9 +22,9 @@ if [ $? -ne 0 ] ; then
 	echo 'Updating zshrc...'
 	sed -i .bak -e 's/ZSH_THEME="robbyrussell"/ZSH_THEME="drmonkeysee"/ ; s/^plugins=(.*$/plugins=(git git-prompt virtualenv)/' "$zshrc"
 	echo "
-	# Profile settings
-	source $zsh_settings
-	" >> "$zshrc"
+# Profile settings
+source $zsh_settings
+" >> "$zshrc"
 	if [ $exit_code -eq 0 ] ; then exit_code=$? ; fi
 fi
 
