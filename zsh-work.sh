@@ -1,7 +1,7 @@
 # Environment
 unset LESS
 export PATH="/usr/local/sbin:$PATH"
-export SPARK_HOME=/usr/local/Cellar/apache-spark/2.3.2/libexec
+export SPARK_HOME=/usr/local/Cellar/apache-spark/2.4.4/libexec
 
 # nvm
 export NVM_DIR="$HOME/.nvm"

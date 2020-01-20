@@ -1,5 +1,5 @@
 local ret_status="%(?:%{$fg_bold[cyan]%}:%{$fg_bold[red]%})"
-PROMPT='$(virtualenv_prompt_info)%n@%m:${ret_status}%c%{$reset_color%}∫ '
+PROMPT='$(virtualenv_prompt_info)%m:${ret_status}%c%{$reset_color%}∫ '
 
 # NOTE: git vars taken from git-prompt, stash check taken from gitfast
 function git_stash_status() {
