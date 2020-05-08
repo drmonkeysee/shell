@@ -39,8 +39,6 @@ ln -sv "${PWD}/SublimeText/Preferences.sublime-settings" "${subldir}/Preferences
 if [ $exit_code -eq 0 ] ; then exit_code=$? ; fi
 ln -sv "${PWD}/SublimeText/Anaconda.sublime-settings" "${subldir}/Anaconda.sublime-settings"
 if [ $exit_code -eq 0 ] ; then exit_code=$? ; fi
-ln -sv "${PWD}/SublimeText/EasyClangComplete.sublime-settings" "${subldir}/EasyClangComplete.sublime-settings"
-if [ $exit_code -eq 0 ] ; then exit_code=$? ; fi
 
 spacelangs=( 'C' 'C++' 'Objective-C' 'Python' )
 for spacelang in ${spacelangs[@]} ; do
