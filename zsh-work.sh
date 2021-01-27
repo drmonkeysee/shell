@@ -24,7 +24,9 @@ alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
 alias pyv='source venv/bin/activate'
 alias omv="source ${HOME}/Documents/omvenv/bin/activate"
 alias om3v="source ${HOME}/Documents/om3venv/bin/activate"
-alias py3v="source ${HOME}/Documents/py3venv/bin/activate"
+alias py3v='pyenv activate py3v'
+alias pysr='pyenv activate search'
+alias pysp='pyenv activate startpage'
 if [ -f "${HOME}/.shell_aliases" ] ; then
 	source "${HOME}/.shell_aliases"
 fi
