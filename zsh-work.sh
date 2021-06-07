@@ -4,12 +4,16 @@ export PATH="/usr/local/sbin:$PATH"
 export SPARK_HOME=/usr/local/Cellar/apache-spark/3.0.1/libexec
 
 # pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
 if command -v pyenv 1>/dev/null 2>&1; then
 	eval "$(pyenv init -)"
 fi
 if which pyenv-virtualenv-init > /dev/null; then
 	eval "$(pyenv virtualenv-init -)";
 fi
+eval "$(pyenv init -)"
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
