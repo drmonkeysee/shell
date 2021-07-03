@@ -1,4 +1,5 @@
 {
+  "auto_complete_commit_on_tab": true,
   "folder_exclude_patterns":
   [
     ".cache",
