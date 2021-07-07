@@ -8,6 +8,7 @@
     ".hg",
     ".serverless",
     ".svn",
+    "__pycache__",
     "CVS",
     "node_modules",
     "venv"
