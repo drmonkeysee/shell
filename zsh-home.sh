@@ -1,5 +1,6 @@
 # Environment
 unset LESS
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Aliases
 alias ls='ls -GF'

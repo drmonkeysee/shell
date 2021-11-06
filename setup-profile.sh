@@ -33,7 +33,7 @@ ln -sv "${PWD}/vimrc" "${HOME}/.vimrc"
 if [ $exit_code -eq 0 ] ; then exit_code=$? ; fi
 
 echo 'Creating Sublime Text preference links...'
-subldir="${HOME}/Library/Application Support/Sublime Text 3/Packages/User"
+subldir="${HOME}/Library/Application Support/Sublime Text/Packages/User"
 
 ln -sv "${PWD}/SublimeText/Preferences.sublime-settings" "${subldir}/Preferences.sublime-settings"
 if [ $exit_code -eq 0 ] ; then exit_code=$? ; fi
