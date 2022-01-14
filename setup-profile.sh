@@ -39,9 +39,6 @@ if [ $exit_code -eq 0 ] ; then exit_code=$? ; fi
 
 echo 'Creating Sublime Text preference links...'
 subldir="${HOME}/Library/Application Support/Sublime Text/Packages/User"
-if [ ! -d "$subldir" ] ; then
-	subldir="${HOME}/Library/Application Support/Sublime Text 3/Packages/User"
-fi
 
 ln -sv "${PWD}/SublimeText/Preferences.sublime-settings" "${subldir}/Preferences.sublime-settings"
 if [ $exit_code -eq 0 ] ; then exit_code=$? ; fi
