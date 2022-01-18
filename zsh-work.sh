@@ -31,6 +31,7 @@ alias om3v="source ${HOME}/Documents/om3venv/bin/activate"
 alias py3v='pyenv activate py3v'
 alias pysr='pyenv activate search'
 alias pysp='pyenv activate startpage'
+alias pycl='pyenv activate channel-leasing'
 if [ -f "${HOME}/.shell_aliases" ] ; then
 	source "${HOME}/.shell_aliases"
 fi
