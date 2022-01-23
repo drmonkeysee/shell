@@ -5,6 +5,7 @@
     ".cache",
     ".git",
     ".hg",
+    ".parcel-cache",
     ".serverless",
     ".svn",
     "__pycache__",
