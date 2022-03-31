@@ -25,7 +25,7 @@ exit_code=$?
 grep -q drmonkeysee "$zshrc"
 if [ $? -ne 0 ] ; then
 	echo 'Updating zshrc...'
-	sed -i .bak -e 's/ZSH_THEME="robbyrussell"/ZSH_THEME="drmonkeysee"/ ; s/^plugins=(.*$/plugins=(git git-prompt virtualenv)/' "$zshrc"
+	sed -i .bak -e 's/ZSH_THEME="robbyrussell"/ZSH_THEME="drmonkeysee"/ ; s/^plugins=(.*$/plugins=(git virtualenv)/' "$zshrc"
 	echo "
 # Profile settings
 source $zsh_settings
