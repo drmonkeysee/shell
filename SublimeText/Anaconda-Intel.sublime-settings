@@ -1,8 +1,0 @@
-{
-  "python_interpreter": "/usr/local/bin/python3",
-  "pep8_ignore":
-  [
-    "E309",
-    "W503"
-  ]
-}

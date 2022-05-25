@@ -7,12 +7,10 @@ if [ "$1" == '-o' ] ; then
 	echo 'Using home profile...'
 	zsh_theme_src=${zsh_theme}-home.zsh-theme
 	zsh_settings="${PWD}/zsh-home.sh"
-	zsh_arch=Arm
 elif [ "$1" == '-w' ] ; then
 	echo 'Using work profile...'
 	zsh_theme_src=${zsh_theme}-work.zsh-theme
 	zsh_settings="${PWD}/zsh-work.sh"
-	zsh_arch=Intel
 else
 	echo 'Specify -o (home) or -w (work).'
 	exit 1
@@ -42,7 +40,7 @@ subldir="${HOME}/Library/Application Support/Sublime Text/Packages/User"
 
 ln -sv "${PWD}/SublimeText/Preferences.sublime-settings" "${subldir}/Preferences.sublime-settings"
 if [ $exit_code -eq 0 ] ; then exit_code=$? ; fi
-ln -sv "${PWD}/SublimeText/Anaconda-${zsh_arch}.sublime-settings" "${subldir}/Anaconda.sublime-settings"
+ln -sv "${PWD}/SublimeText/Anaconda.sublime-settings" "${subldir}/Anaconda.sublime-settings"
 if [ $exit_code -eq 0 ] ; then exit_code=$? ; fi
 
 spacelangs=( 'C' 'C++' 'Objective-C' 'Python' )
