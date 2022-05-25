@@ -1,5 +1,5 @@
 {
-  "python_interpreter": "/opt/homebrew/bin/python3",
+  "python_interpreter": "$HOME/.pyenv/shims/python3",
   "pep8_ignore":
   [
     "E309",
