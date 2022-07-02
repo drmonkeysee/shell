@@ -1,3 +1,4 @@
 {
-  "python_interpreter": "$HOME/.pyenv/shims/python3"
+  "python_interpreter": "$HOME/.pyenv/shims/python3",
+  "disable_anaconda_completion": true
 }
