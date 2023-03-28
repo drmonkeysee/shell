@@ -14,5 +14,10 @@
     "venv"
   ],
   "rulers": [80],
-  "trim_trailing_white_space_on_save": true
+  "trim_trailing_white_space_on_save": true,
+  "ignored_packages":
+  [
+    "Rust",
+    "Vintage",
+  ],
 }
