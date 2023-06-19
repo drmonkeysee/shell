@@ -55,6 +55,8 @@ for weblang in ${weblangs[@]} ; do
 done
 ln -sv "${PWD}/SublimeText/HTML.sublime-settings" "${subldir}/HTML.sublime-settings"
 if [ $exit_code -eq 0 ] ; then exit_code=$? ; fi
+ln -sv "${PWD}/SublimeText/LSP.sublime-settings" "${subldir}/LSP.sublime-settings"
+if [ $exit_code -eq 0 ] ; then exit_code=$? ; fi
 
 echo 'Creating BBEdit text filter links...'
 for textfilter in BBEdit/*.py ; do
