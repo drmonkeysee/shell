@@ -36,3 +36,9 @@ alias pybds='pyenv activate bds'
 if [ -f "${HOME}/.shell_aliases" ] ; then
 	source "${HOME}/.shell_aliases"
 fi
+aws-check () {
+	aws sts get-caller-identity
+}
+aws-sso () {
+	aws sso login --profile default
+}
