@@ -29,6 +29,7 @@ alias pysr='pyenv activate search'
 alias pysp='pyenv activate startpage'
 alias pycl='pyenv activate channel-leasing'
 alias pybds='pyenv activate bds'
+alias pydpl='pyenv activate dpl'
 if [ -f "${HOME}/.shell_aliases" ] ; then
 	source "${HOME}/.shell_aliases"
 fi
