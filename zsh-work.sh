@@ -41,3 +41,9 @@ aws-check () {
 aws-sso () {
 	aws sso login --profile default
 }
+aws-spw () {
+	aws sso login --profile sp-us-west-2-prod
+}
+aws-spe () {
+	aws sso login --profile sp-us-east-1-prod
+}
