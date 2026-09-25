@@ -47,3 +47,11 @@ aws-spw () {
 aws-spe () {
 	aws sso login --profile sp-us-east-1-prod
 }
+# Open the most recent Claude Code plan in Chrome; optional arg filters by name.
+vp () {
+	emulate -L zsh
+	local -a plans
+	plans=(~/.claude/plans/*${1:+*$1*}.md(Nom))
+	(( $#plans )) || { print -u2 "vp: no matching plan in ~/.claude/plans"; return 1 }
+	open -a "/Applications/Google Chrome.app" "$plans[1]"
+}
