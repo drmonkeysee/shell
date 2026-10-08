@@ -11,6 +11,7 @@ eval "$(pyenv init -)"
 alias ls='ls -GF'
 alias bbe='open -a /Applications/BBEdit.app'
 alias gcm='open -a /Applications/Google\ Chrome.app'
+alias ffx='open -a /Applications/Firefox.app'
 alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
 alias pyv='source venv/bin/activate'
 alias py3v="source ${HOME}/Documents/Dev/Tools/py3venv/bin/activate"
